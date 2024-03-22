@@ -20,8 +20,8 @@ from demo_crud import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('usuarios/', views.ListarUsuarios, name='listar_usuarios'),
-    path('usuarios/crear', views.CrearUsuario, name='crear_usuario'),
-    path('usuarios/editar/<str:email>', views.EditarUsuario, name='editar_usuario'),
-    path('usuarios/eliminar/<str:email>', views.EliminarUsuario, name='eliminar_usuario')
+    path('admin/usuarios/', views.ListarUsuarios, name='listar_usuarios'),
+    path('admin/usuarios/crear', views.CrearUsuario, name='crear_usuario'),
+    path('admin/usuarios/editar/<str:email>', views.EditarUsuario, name='editar_usuario'),
+    path('admin/usuarios/eliminar/<str:email>', views.EliminarUsuario, name='eliminar_usuario')
 ]
